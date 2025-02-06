@@ -22,20 +22,21 @@ int main() {
     for (int i = 1; i < arrSize; i++)
     {
         int tmp;
-        for (int j = 0; j <  arrSize - 1; j++) {
+        for (int j = 0; j <  arrSize - i; j++) {
+            printArr(arr, arrSize);
             if (arr[j] > arr[j+1])
             {
                 tmp = arr[j];
                 arr[j] = arr[j+1];
                 arr[j+1] = tmp;
                 
-                printArr(arr, arrSize);
+                
                 
             }
         }
     
             
-        printArr(arr, arrSize);
+        
         
         
     }
